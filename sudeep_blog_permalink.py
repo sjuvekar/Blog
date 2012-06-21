@@ -7,6 +7,9 @@ __SUDEEP_BLOG_PERMALINK_HTML__ = "sudeep_blog_permalink.html"
 
 
 class SudeepBlogPermalinkHandler(SudeepBlogTemplate):
+  def head(self):
+  	pass
+  
   def get(self, sudeep_blog_id):
         blog_entry = SudeepBlogDB.get_by_id(long(sudeep_blog_id))
 	if not blog_entry:
