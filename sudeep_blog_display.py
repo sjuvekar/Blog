@@ -7,6 +7,9 @@ from google.appengine.ext import db
 __SUDEEP_BLOG_DISPLAY_HTML__ = "sudeep_blog_display.html"
 
 class SudeepBlogDisplayHandler(SudeepBlogTemplate):
+	def head(self):
+		pass
+	
 	def get(self):
 		blog_entries = db.GqlQuery("SELECT * FROM SudeepBlogDB ORDER BY sudeep_blog_created DESC")
 		sudeep_blog_login = "login"
