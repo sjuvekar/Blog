@@ -6,6 +6,17 @@ body h1 {
 	text-align: center;
 }
 
+.sudeep-blog-login,
+.sudeep-blog-login a {
+	color: #303030;
+	width: 90%;
+	text-align: right;
+}
+
+.sudeep-blog-login a:hover {
+	background: #C0C0C0;
+}
+
 .sudeep-blog-display {
 	border: 1px solid black;
 	background: #EEEEEE;
