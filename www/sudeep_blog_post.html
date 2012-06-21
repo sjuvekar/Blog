@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>New Blog Post</title>
+	<link rel="stylesheet" type="text/css" href="/css/sudeep_blog_post.css">
+	<link rel="shortcut icon" href="../images/sudeep.jpg">
+</head>
+<body>
+	<form method="post">
+		<h1> New Post</h1>
+		<label>
+			<div>Subject</div>
+			<input type="text" name="subject" id="sudeep-blog-subject" value="{{sudeep_blog_subject}}">
+		</label>
+		<div class="sudeep-blog-error">{{sudeep_blog_subject_error}}</div>
+		<label>
+			<div>Blog</div>
+			<textarea name="content">{{sudeep_blog_body}}</textarea>
+		</label>
+		<div class="sudeep-blog-error">{{sudeep_blog_body_error}}</div>
+		<input type="submit" value="submit" class="sudeep_blog_button">
+	</form>
+
+	<div class="sudeep-blog-anchor">
+		<a href="/blog">&lt;&lt;Return to Blog entries</a>
+	</div>
+
+</body>
+</html>

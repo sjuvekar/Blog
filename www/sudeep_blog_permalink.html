@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<head>
+	<title> Sudeep Juvekar's Blog - New Post</title>
+	<link rel="stylesheet" type="text/css" href="/css/sudeep_blog_display.css">
+	<link rel="shortcut icon" href="../images/sudeep.jpg">
+</head>
+<body>
+	<h1>Sudeep's Blog</h1>
+	<div class="sudeep-blog-display">
+		<div class="sudeep-blog-display-subject">
+			<h2>{{blog_entry.sudeep_blog_db_subject}}</h2>
+			<span class="sudeep-blog-display-date">{{blog_entry.sudeep_blog_created.date()}}</span>
+			<hr>
+                </div>
+		<div class="sudeep-blog-display-body">
+                        <pre>{{blog_entry.sudeep_blog_db_body}}</pre>
+                </div>	
+	</div>
+	<div class="sudeep-blog-anchor">
+		<a href="/blog">&lt;&lt;Return to Blog entries</a>
+	</div>
+</body>

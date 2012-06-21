@@ -1,0 +1,71 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+body h1 {
+	text-align: center;
+}
+
+.sudeep-blog-display {
+	border: 1px solid black;
+	background: #EEEEEE;
+	width: 90%;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.sudeep-blog-display-subject {
+	padding: 10px;
+	margin-bottom: -10px;
+	background: #DEDEDE;
+}
+
+.sudeep-blog-display-subject h2 {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	display: inline;
+}
+
+.sudeep-blog-display-subject h2 a {
+	color: #404040;
+	text-decoration: none;
+}
+
+.sudeep-blog-display-subject hr {
+	padding: 0px;
+}
+
+.sudeep-blog-display-date {
+	float: right;
+	font-size: 15px;
+	color: #757575;
+	margin-bottom: 0px;	
+}
+
+.sudeep-blog-display-body pre {
+	margin-left: 30px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: #575757;
+	font-family: inherit;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.sudeep-blog-anchor {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.sudeep-blog-anchor a, 
+.sudeep-blog-display-body a {
+	color: #232323;
+}
+
+.sudeep-blog-anchor a:hover,
+.sudeep-blog-display-body a:hover {
+	background: #E2E2E2;
+}

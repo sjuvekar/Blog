@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<head>
+	<title> Sudeep Juvekar's Blog</title>
+	<link rel="stylesheet" type="text/css" href="/css/sudeep_blog_display.css">
+	<link rel="shortcut icon" href="images/sudeep.jpg">
+</head>
+<body>
+	<h1>Sudeep's Blog</h1>
+	 <div class="sudeep-blog-anchor">
+		<a href="/blog/newpost">Create a new post&gt;&gt;</a>
+	</div>
+ 	  {% for blog_entry in blog_entries %}
+	     <div class="sudeep-blog-display">
+		<div class="sudeep-blog-display-subject">
+			<h2><a href="/blog/{{blog_entry.key().id()}}">{{blog_entry.sudeep_blog_db_subject}}</a></h2>
+			<span class="sudeep-blog-display-date">{{blog_entry.sudeep_blog_created.date()}}</span>
+		</div>
+		<hr>
+		<div class="sudeep-blog-display-body">
+			<pre>{{blog_entry.sudeep_blog_db_body}}</pre>
+		</div>
+	     </div>
+	  {% endfor %}
+</body>

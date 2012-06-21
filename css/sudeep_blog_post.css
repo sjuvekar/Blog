@@ -1,0 +1,49 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+label {
+	display: block;
+	width: 90%;
+	margin: 5px;
+}
+
+input#sudeep-blog-subject {
+	width: 50%;
+	height: 30px;
+	font-weight: bold;
+	font-size: 25px;
+	border: 3px solid #cccccc;
+}
+
+textarea {
+	width: 50%;
+	height: 500px;
+	border: 3px solid #cccccc;
+	font-family: inherit;
+}	
+
+.sudeep_blog_button {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #006;
+	font-weight: bold;
+}
+
+.sudeep-blog-error {
+	color: #E00000;
+	margin: 5px;
+}
+
+.sudeep-blog-anchor {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.sudeep-blog-anchor a {
+	color: #232323;
+}
+
+.sudeep-blog-anchor a:hover {
+	background: #E2E2E2;
+}
