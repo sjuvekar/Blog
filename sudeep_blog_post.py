@@ -1,5 +1,6 @@
 from sudeep_blog_template import SudeepBlogTemplate
 from sudeep_blog_db import SudeepBlogDB
+import sudeep_blog_hasher
 
 __SUDEEP_BLOG_POST_HTML__ = "sudeep_blog_post.html"
 
@@ -8,8 +9,12 @@ class SudeepBlogPostHandler(SudeepBlogTemplate):
 	self.render(template, sudeep_blog_subject=subject, sudeep_blog_subject_error=subject_error, sudeep_blog_body=body, sudeep_blog_body_error=body_error)
 
   def get(self):
-	self.render_blog(__SUDEEP_BLOG_POST_HTML__)
-
+	user_cookie = self.request.cookies.get("user_id")
+	if user_cookie and sudeep_blog_hasher.is_valid_cookie(user_cookie): 	
+		self.render_blog(__SUDEEP_BLOG_POST_HTML__)
+	else:
+		self.redirect("/blog/login") 	
+	
   def post(self):
 	subject = self.request.get("subject")
 	body = self.request.get("content")
