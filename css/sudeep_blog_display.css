@@ -6,6 +6,12 @@ body h1 {
 	text-align: center;
 }
 
+body h3 {
+	margin-top: 0px;
+	text-align: center;
+	color: #787878;
+}
+
 .sudeep-blog-login,
 .sudeep-blog-login a {
 	color: #303030;
