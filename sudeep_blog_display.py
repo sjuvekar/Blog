@@ -11,7 +11,7 @@ class SudeepBlogDisplayHandler(SudeepBlogTemplate):
 		pass
 	
 	def get(self):
-		blog_entries = db.GqlQuery("SELECT * FROM SudeepBlogDB ORDER BY sudeep_blog_created DESC")
+		blog_entries = SudeepBlogDB.all().order("-sudeep_blog_created")
 		sudeep_blog_login = "login"
 		user_cookie = self.request.cookies.get("user_id")
 		if user_cookie and sudeep_blog_hasher.is_valid_cookie(user_cookie):
