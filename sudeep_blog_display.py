@@ -26,7 +26,7 @@ class SudeepBlogDisplayHandler(SudeepBlogTemplate):
 		
 		# Get the custom links to previous and next pages
 		pages_to_link = []
-		for i in range(page-3, page+3):
+		for i in range(page-30, page+30):
 			if i > 0 and (i - 1) * __NUM_ENTRIES_PER_PAGE__ < total_num_entries:
 				pages_to_link.append(i)
 		
