@@ -59,6 +59,16 @@ body h3 {
 	margin-bottom: 0px;	
 }
 
+#sudeep-blog-tumblr {
+	display:inline-block; 
+	text-indent:-9999px; 
+	overflow: hidden; 
+	width: 61px; 
+	height: 20px; 
+	background: url('http://platform.tumblr.com/v1/share_1.png') 
+	top left no-repeat transparent;
+}
+
 .sudeep-blog-display-body pre {
 	margin-left: 30px;
 	margin-bottom: 20px;

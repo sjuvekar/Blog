@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title> Sudeep Juvekar's Blog - New Post</title>
+	<title> {{blog_entry.sudeep_blog_db_subject}} </title>
 	<link rel="stylesheet" type="text/css" href="/css/sudeep_blog_display.css">
 	<link rel="shortcut icon" href="../images/sudeep.jpg">
 </head>
@@ -12,8 +12,33 @@
 		<div class="sudeep-blog-display-subject">
 			<h2>{{blog_entry.sudeep_blog_db_subject}}</h2>
 			<span class="sudeep-blog-display-date">{{blog_entry.sudeep_blog_created.date()}}</span>
-			<hr>
+			<!-- Tweet button -->
+			<span class="sudeep-blog-display-date">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text= "{{blog_entry.sudeep_blog_db_subject}}" 
+				data-url="http://www.sjuvekar.appspot.com/blog/{{blog_entry.key().id()}}" data-counturl="http://www.sjuvekar.appspot.com/blog/" 
+				data-via="pseud_deep" data-lang="en">Tweet</a>
+				<script>
+					!function(d,s,id) {
+						var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id)) {
+							js=d.createElement(s);
+							js.id=id;js.src="https://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+					}
+					(document,"script","twitter-wjs");
+				</script>
+			</span>
+			<!-- end Twitter button -->
+			<!-- tumblr button -->
+			<span class="sudeep-blog-display-date">
+				<a id="sudeep-blog-tumblr" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.sjuvekar.appspot.com%2Fblog%2F%0A{{blog_entry.key().id()}}&name={{blog_entry.sudeep_blog_db_subject}}" title="Share on Tumblr">
+					Share on Tumblr
+				</a>
+			</span>
+			<!-- end of tumblr button -->
                 </div>
+		<hr>
 		<div class="sudeep-blog-display-body">
                         <pre>{{blog_entry.sudeep_blog_db_body}}</pre>
                 </div>	
@@ -21,5 +46,8 @@
 	<div class="sudeep-blog-anchor">
 		<a href="/blog">&lt;&lt;Return to Blog entries</a>
 	</div>
+	<!-- tumbler script -->
+	<script src="http://platform.tumblr.com/v1/share.js"></script>
+	<!-- end tumblr script -->
 </body>
 </html>
